@@ -3,7 +3,35 @@ const logTree = require('console-log-tree');
 const data = ['root', 'A', 'B']
 // const data = ['root', 'A', 'B', 'C', 'D', 'E', 'F']
 // const data = ['root', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N']
-
+/*
+{
+	name: Root,
+	children: [
+			{
+				name: A,
+				children: [
+                    {
+                        name: C
+                    },
+                    {
+                        name: D
+                    }
+                ]
+			},
+			{
+				name: B,
+				children: [
+                    {
+                        name: E
+                    },
+                    {
+                        name: F
+                    }
+                ]
+			}
+		]
+}
+*/
 /**
  * Recursive function for drawing the tree with console-log-tree
  * @param {Array} tree - All nodes of the tree, in order
@@ -11,6 +39,7 @@ const data = ['root', 'A', 'B']
  * @returns The Node in correct format
  */
 const drawNode = (tree, curr) => {
+
 }
 
 
