@@ -34,12 +34,12 @@ const data = ['root', 'A', 'B']
 */
 /**
  * Recursive function for drawing the tree with console-log-tree
- * @param {Array} tree - All nodes of the tree, in order
+ * @param {Array} data - All nodes of the tree, in order
  * @param {Number} curr - Current node
  * @returns The Node in correct format
  */
-const drawNode = (tree, curr) => {
-
+const drawNode = (data, curr) => {
+    
 }
 
 
