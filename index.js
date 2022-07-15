@@ -5,11 +5,11 @@ const data = ['root', 'A', 'B']
 // const data = ['root', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N']
 /*
 {
-	name: Root,
-	children: [
-			{
-				name: A,
-				children: [
+    name: Root,
+    children: [
+            {
+                name: A,
+                children: [
                     {
                         name: C
                     },
@@ -17,10 +17,10 @@ const data = ['root', 'A', 'B']
                         name: D
                     }
                 ]
-			},
-			{
-				name: B,
-				children: [
+            },
+            {
+                name: B,
+                children: [
                     {
                         name: E
                     },
@@ -28,8 +28,8 @@ const data = ['root', 'A', 'B']
                         name: F
                     }
                 ]
-			}
-		]
+            }
+        ]
 }
 */
 /**
@@ -39,7 +39,20 @@ const data = ['root', 'A', 'B']
  * @returns The Node in correct format
  */
 const drawNode = (data, curr) => {
-    
+    const nodesLastLayer = (data.length + 1) / 2;
+    if(curr > data.length - nodesLastLayer) {
+        return {
+            name: data[curr - 1]
+        }
+    } else {
+        return {
+            name: data[curr - 1],
+            children: [
+                drawNode(data, curr * 2),
+                drawNode(data, curr * 2 + 1),
+            ]
+        }
+    }
 }
 
 
