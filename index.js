@@ -39,20 +39,7 @@ const data = ['root', 'A', 'B']
  * @returns The Node in correct format
  */
 const drawNode = (data, curr) => {
-    const nodesLastLayer = (data.length + 1) / 2;
-    if(curr > data.length - nodesLastLayer) {
-        return {
-            name: data[curr - 1]
-        }
-    } else {
-        return {
-            name: data[curr - 1],
-            children: [
-                drawNode(data, curr * 2),
-                drawNode(data, curr * 2 + 1),
-            ]
-        }
-    }
+    
 }
 
 
