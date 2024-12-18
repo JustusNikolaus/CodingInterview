@@ -1,7 +1,7 @@
 const logTree = require('console-log-tree');
 
-const data = ['root', 'A', 'B']
-// const data = ['root', 'A', 'B', 'C', 'D', 'E', 'F']
+// const data = ['root', 'A', 'B']
+const data = ['root', 'A', 'B', 'C', 'D', 'E', 'F']
 // const data = ['root', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N']
 /*
 {
@@ -39,17 +39,10 @@ const data = ['root', 'A', 'B']
  * @returns The Node in correct format
  */
 const drawNode = (data, curr) => {
-    
+   
 }
 
-
-const tree = {
-    name: data[0],
-    children: [
-        drawNode(data, 2),
-        drawNode(data, 3)
-    ]
-}
+const tree = drawNode(data, 1)
 
 const treeStr = logTree.parse(tree)
 
