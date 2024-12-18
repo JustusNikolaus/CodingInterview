@@ -39,7 +39,15 @@ const data = ['root', 'A', 'B', 'C', 'D', 'E', 'F']
  * @returns The Node in correct format
  */
 const drawNode = (data, curr) => {
-   
+    return {
+        name: data[curr - 1],
+        children: curr * 2 > data.length ?
+                    [] :
+                    [
+                        drawNode(data, curr * 2),
+                        drawNode(data, curr * 2 + 1)
+                    ]
+    } 
 }
 
 const tree = drawNode(data, 1)
