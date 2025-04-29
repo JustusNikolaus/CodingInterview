@@ -9,8 +9,9 @@
  * 3. Search books:
  *    - By title (partial match, case-insensitive).
  *    - By author (partial match, case-insensitive).
- * 4. List all books in the library.
- * 
+ *    - By ISBN
+ * 4. List all books in the library. 
+ * ÷
  * Requirements:
  * - Use TypeScript to define proper types/interfaces for the books and the library.
  * - Implement the library as a class named `Library`.
